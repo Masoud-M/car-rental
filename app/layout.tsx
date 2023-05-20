@@ -1,5 +1,6 @@
 import Navbar from "./components/navbar/Navbar";
 import Hero from "./components/hero/Hero";
+import Plan from "./components/plan/Plan";
 import "./globals.css";
 import { Nunito } from "next/font/google";
 
@@ -22,6 +23,7 @@ export default function RootLayout({
       <body className="  overflow-y-scroll">
         <Navbar />
         <Hero />
+        <Plan />
         {children}
       </body>
     </html>

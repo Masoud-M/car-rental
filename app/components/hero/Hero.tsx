@@ -7,10 +7,10 @@ const Hero = () => {
   return (
     <div>
       <Image className=" absolute top-0 right-0 -z-10" src={HeroBg} alt="/" />
-      <div className="flex flex-row justify-between lg:max-w-[67%] lg:px-0 px-5 w-full h-screen mx-auto items-center">
-        <div className=" flex flex-col max-w-[500px] z-10 justify-center items-center text-center md:justify-start md:text-start md:items-start">
-          <h4 className="text-[2.2rem] font-bold">Plan your trip now</h4>
-          <h1 className="text-[56px] font-bold mt-[10px] mb-[23px]">
+      <div className="flex flex-row  justify-between lg:w-[65%] lg:px-0 px-5 h-screen mx-auto items-center relative">
+        <div className=" flex flex-col w-[500px] z-10 justify-center items-center text-center lg:text-start lg:items-start lg:justify-start mx-auto lg:mx-0">
+          <h4 className="text-[22px] font-bold">Plan your trip now</h4>
+          <h1 className="text-[56px]/[55px] font-bold mt-[10px] mb-[23px]">
             Save <span className="text-[#ff4d30] ">big</span> with our car
             rental
           </h1>
@@ -29,7 +29,7 @@ const Hero = () => {
         </div>
 
         <Image
-          className=" hidden md:block absolute right-0 w-[65%] "
+          className=" hidden lg:block w-[65%] absolute right-0"
           src={MainCar}
           alt="/"
         />
