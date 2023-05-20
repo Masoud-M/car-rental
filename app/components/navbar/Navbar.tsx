@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import Image from "next/image";
-import Logo from "./logo.png";
+import Logo from "../../../public/logo.png";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleNav = () => {
@@ -16,7 +16,7 @@ const Navbar = () => {
   return (
     <nav>
       {/* small screens */}
-      <div className="lg:hidden flex flex-row px-5 py-8 justify-between items-center">
+      <div className="lg:hidden bg-transparent absolute left-0 right-0 top-0 z-50 flex flex-row px-5 py-8 justify-between items-center">
         <div>
           {!nav ? <Image className="w-[145px]" src={Logo} alt="/" /> : <></>}
         </div>
@@ -49,7 +49,7 @@ const Navbar = () => {
       </div>
 
       {/* large screens */}
-      <div className="hidden lg:flex max-w-[67%] mx-auto   py-8 items-center justify-between  ">
+      <div className="hidden lg:flex z-50 max-w-[67%] mx-auto   py-8 items-center justify-between  ">
         <Image className="w-[145px]" src={Logo} alt="/" />
 
         <ul className="hidden 2xl:flex gap-6 ">
@@ -64,7 +64,7 @@ const Navbar = () => {
         <div className="flex items-center">
           <span className={menuLgStyle}>Sing In</span>
 
-          <button className=" bg-[#ff4d30] text-white shadow-lg text-lg px-[26px] py-[10px] ml-5  rounded-md hover:bg-[#a83220] transition">
+          <button className=" bg-[#ff4d30] text-white shadow-lg text-lg font-semibold px-[26px] py-[10px] ml-5  rounded-md hover:bg-[#a83220] transition">
             Register
           </button>
         </div>
