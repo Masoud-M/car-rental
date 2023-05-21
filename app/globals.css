@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .booking-bg {
+    background-image: url("../public/booking/book-bg.png");
+    background-position: 50%;
+  }
+}

@@ -3,6 +3,7 @@ import Hero from "./components/hero/Hero";
 import Plan from "./components/plan/Plan";
 import "./globals.css";
 import { Nunito } from "next/font/google";
+import Booking from "./components/booking/Booking";
 
 const font = Nunito({
   subsets: ["latin"],
@@ -23,6 +24,7 @@ export default function RootLayout({
       <body className="  overflow-y-scroll">
         <Navbar />
         <Hero />
+        <Booking />
         <Plan />
         {children}
       </body>
