@@ -4,6 +4,7 @@ import Plan from "./components/plan/Plan";
 import "./globals.css";
 import { Nunito } from "next/font/google";
 import Booking from "./components/booking/Booking";
+import VehicleModels from "./components/vehicleModels/Vehicle-models";
 
 const font = Nunito({
   subsets: ["latin"],
@@ -26,6 +27,7 @@ export default function RootLayout({
         <Hero />
         <Booking />
         <Plan />
+        <VehicleModels />
         {children}
       </body>
     </html>
