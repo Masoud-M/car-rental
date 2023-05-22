@@ -7,19 +7,6 @@ import Passat from "../../public/cars-big/passatcc.jpg";
 
 export const CarDataApi = [
   {
-    name: "VW Golf 6",
-    price: "37",
-    img: Golf6,
-    model: "Golf 6",
-    mark: "Volkswagen",
-    year: "2008",
-    doors: "4/5",
-    air: "Yes",
-    transmission: "Manual",
-    fuel: "Diesel",
-  },
-
-  {
     name: "Audi A1 S-Line",
     price: "45",
     img: AudiA1,
@@ -31,7 +18,18 @@ export const CarDataApi = [
     transmission: "Manual",
     fuel: "Gasoline",
   },
-
+  {
+    name: "VW Golf 6",
+    price: "37",
+    img: Golf6,
+    model: "Golf 6",
+    mark: "Volkswagen",
+    year: "2008",
+    doors: "4/5",
+    air: "Yes",
+    transmission: "Manual",
+    fuel: "Diesel",
+  },
   {
     name: "Toyota Camry",
     price: "30",
