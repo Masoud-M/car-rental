@@ -40,7 +40,7 @@ const VehicleModels: React.FC<CarInfoProp> = () => {
 
   const gridMainStyle = "grid grid-cols-1 grid-flow-row box-border ";
   const gridChildStyle =
-    "px-2 py-1 grid grid-cols-2 grid-flow-col text-center border-r-2 border-l-2 border-b-2 border-[#706f7b]";
+    "text-[17px] font-semibold px-[9px] py-[5px] grid grid-cols-2 grid-flow-col text-center border-r-2 border-l-2 border-b-2 border-[#706f7b]";
   const gridSpanStyle = "border-r-2 border-[#706f7b]";
   return (
     <div className="w-[90%] lg:w-[65%] mx-auto my-[100px]">
@@ -83,7 +83,7 @@ const VehicleModels: React.FC<CarInfoProp> = () => {
           })}
         </div>
 
-        <div className="flex flex-col justify-center items-center md:flex-row md:gap-[11rem] lg:justify-between">
+        <div className="flex flex-col justify-between items-center  md:flex-row lg:gap-[11rem] ">
           {/* image */}
           <div className=" max-w-[500px] ">
             <Image className=" block w-full" src={activeCar.img} alt="/" />
@@ -91,7 +91,7 @@ const VehicleModels: React.FC<CarInfoProp> = () => {
 
           {/* car info */}
           <div className=" h-[400px] w-[250px]">
-            <div className="flex flex-col w-full">
+            <div className="flex flex-col w-full h-full justify-center">
               <div className="bg-[#ff4d30] flex justify-center items-center">
                 <span className="text-[28px] text-white font-bold ">
                   ${activeCar.price}
