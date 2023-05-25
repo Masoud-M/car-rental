@@ -7,4 +7,11 @@
     background-image: url("../public/booking/book-bg.png");
     background-position: 50%;
   }
+
+  .whyus-bg {
+    background-image: url("../public/whyus/bg.png");
+    background-position: -225px 255px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }

@@ -6,6 +6,7 @@ import { Nunito } from "next/font/google";
 import Booking from "./components/booking/Booking";
 import VehicleModels from "./components/vehicleModels/Vehicle-models";
 import Banner from "./components/banner/Banner";
+import WhyUs from "./components/whyUs/WhyUs";
 
 const font = Nunito({
   subsets: ["latin"],
@@ -30,6 +31,7 @@ export default function RootLayout({
         <Plan />
         <VehicleModels />
         <Banner />
+        <WhyUs />
         {children}
       </body>
     </html>
