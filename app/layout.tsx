@@ -7,6 +7,7 @@ import Booking from "./components/booking/Booking";
 import VehicleModels from "./components/vehicleModels/Vehicle-models";
 import Banner from "./components/banner/Banner";
 import WhyUs from "./components/whyUs/WhyUs";
+import Testimonials from "./components/testimonials/Testimonials";
 
 const font = Nunito({
   subsets: ["latin"],
@@ -24,7 +25,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="  overflow-y-scroll">
+      <body className="   overflow-y-scroll">
         <Navbar />
         <Hero />
         <Booking />
@@ -32,6 +33,7 @@ export default function RootLayout({
         <VehicleModels />
         <Banner />
         <WhyUs />
+        <Testimonials />
         {children}
       </body>
     </html>
