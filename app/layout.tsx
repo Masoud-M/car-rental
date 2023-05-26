@@ -8,6 +8,7 @@ import VehicleModels from "./components/vehicleModels/Vehicle-models";
 import Banner from "./components/banner/Banner";
 import WhyUs from "./components/whyUs/WhyUs";
 import Testimonials from "./components/testimonials/Testimonials";
+import Faq from "./components/faq/Faq";
 
 const font = Nunito({
   subsets: ["latin"],
@@ -34,6 +35,7 @@ export default function RootLayout({
         <Banner />
         <WhyUs />
         <Testimonials />
+        <Faq />
         {children}
       </body>
     </html>

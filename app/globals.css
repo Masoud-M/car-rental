@@ -14,4 +14,11 @@
     background-size: cover;
     background-repeat: no-repeat;
   }
+
+  .faq-bg {
+    background-image: url("../public/faq/car.png");
+    background-position: 0 70%;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
 }
