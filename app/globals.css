@@ -21,4 +21,10 @@
     background-repeat: no-repeat;
     background-size: auto;
   }
+  .download-bg {
+    background-image: url("../public/download/bg02.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
