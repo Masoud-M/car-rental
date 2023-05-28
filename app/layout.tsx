@@ -10,6 +10,7 @@ import WhyUs from "./components/whyUs/WhyUs";
 import Testimonials from "./components/testimonials/Testimonials";
 import Faq from "./components/faq/Faq";
 import Download from "./components/download/Download";
+import Footer from "./components/footer/Footer";
 
 const font = Nunito({
   subsets: ["latin"],
@@ -38,6 +39,7 @@ export default function RootLayout({
         <Testimonials />
         <Faq />
         <Download />
+        <Footer />
         {children}
       </body>
     </html>
