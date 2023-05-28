@@ -24,7 +24,7 @@ const Faq = () => {
   return (
     <div className="faq-bg py-[100px]">
       <div className="w-[90%] lg:w-[65%] mx-auto flex flex-col  items-center justify-center">
-        <div className="flex flex-col items-center justify-center w-[800px] text-center">
+        <div className="flex flex-col items-center justify-center  text-center">
           <h5 className="font-bold text-[22px]">FAQ</h5>
           <h1 className="font-bold text-[42px] mb-[17px]">
             Frequently Asked Questions
@@ -35,12 +35,12 @@ const Faq = () => {
           </p>
         </div>
 
-        <div className="flex flex-col shadow-lg bg-white items-center mt-[70px]">
-          <div className="flex flex-col w-[800px] mx-auto">
+        <div className="flex flex-col shadow-lg bg-white items-center mt-[70px] ">
+          <div className="flex w-full sm:w-[800px]  flex-col  mx-auto">
             <div
               id="q1"
               onClick={() => openQ("q1")}
-              className={`flex justify-between px-[45px] py-[18px] transition duration-{400} ease-in-out shadow-[0_3px_6px_0_rgba(0,0,0,0.1)] cursor-pointer ${getClassQuestion(
+              className={` flex justify-between items-center px-[45px] py-[18px] transition duration-{400} ease-in-out shadow-[0_3px_6px_0_rgba(0,0,0,0.1)] cursor-pointer ${getClassQuestion(
                 "q1"
               )}`}
             >
@@ -66,11 +66,11 @@ const Faq = () => {
             </div>
           </div>
 
-          <div className="flex flex-col w-[800px] mx-auto">
+          <div className="flex w-full sm:w-[800px]  flex-col  mx-auto">
             <div
               id="q2"
               onClick={() => openQ("q2")}
-              className={`flex justify-between px-[45px] py-[18px] transition duration-{400} ease-in-out  shadow-[0_3px_6px_0_rgba(0,0,0,0.1)] cursor-pointer ${getClassQuestion(
+              className={` flex justify-between items-center px-[45px] py-[18px] transition duration-{400} ease-in-out shadow-[0_3px_6px_0_rgba(0,0,0,0.1)] cursor-pointer ${getClassQuestion(
                 "q2"
               )}`}
             >
@@ -95,11 +95,11 @@ const Faq = () => {
               to be informed of any special deals or promotions.
             </div>
           </div>
-          <div className="flex flex-col w-[800px] mx-auto">
+          <div className="flex w-full sm:w-[800px]  flex-col  mx-auto">
             <div
               id="q2"
               onClick={() => openQ("q3")}
-              className={`flex justify-between px-[45px] py-[18px] transition duration-{400} ease-in-out  shadow-[0_3px_6px_0_rgba(0,0,0,0.1)] cursor-pointer ${getClassQuestion(
+              className={`flex  justify-between px-[45px] py-[18px] transition duration-{400} ease-in-out  shadow-[0_3px_6px_0_rgba(0,0,0,0.1)] cursor-pointer ${getClassQuestion(
                 "q3"
               )}`}
             >
