@@ -17,6 +17,7 @@ export const CarDataApi = [
     air: "Yes",
     transmission: "Manual",
     fuel: "Gasoline",
+    isActive: false,
   },
   {
     name: "VW Golf 6",
@@ -29,6 +30,7 @@ export const CarDataApi = [
     air: "Yes",
     transmission: "Manual",
     fuel: "Diesel",
+    isActive: false,
   },
   {
     name: "Toyota Camry",
@@ -41,6 +43,7 @@ export const CarDataApi = [
     air: "Yes",
     transmission: "Automatic",
     fuel: "Hybrid",
+    isActive: false,
   },
 
   {
@@ -54,6 +57,7 @@ export const CarDataApi = [
     air: "Yes",
     transmission: "Manual",
     fuel: "Diesel",
+    isActive: false,
   },
 
   {
@@ -67,6 +71,7 @@ export const CarDataApi = [
     air: "Yes",
     transmission: "Manual",
     fuel: "Diesel",
+    isActive: false,
   },
 
   {
@@ -80,5 +85,6 @@ export const CarDataApi = [
     air: "Yes",
     transmission: "Automatic",
     fuel: "Gasoline",
+    isActive: false,
   },
 ];

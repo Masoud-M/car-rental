@@ -23,14 +23,14 @@ const Navbar = () => {
         {!nav ? (
           <AiOutlineMenu
             onClick={handleNav}
-            size={30}
-            className="fixed top-8 right-4 z-[99] lg:hidden "
+            size={32}
+            className="absolute top-8 right-4 z-[99] hover:text-[#ff4d30] font-bold transition lg:hidden "
           />
         ) : (
           <AiOutlineClose
             onClick={handleNav}
-            size={30}
-            className="fixed top-8 right-4 z-[99] lg:hidden "
+            size={32}
+            className="absolute top-8 right-4 z-[99] hover:text-[#ff4d30] transition lg:hidden "
           />
         )}
 

@@ -2,7 +2,7 @@ import { BsFillTelephoneFill } from "react-icons/bs";
 import { HiMail } from "react-icons/hi";
 const Footer = () => {
   return (
-    <div className="w-[90%] lg:w-[65%] mx-auto bg-white py-[100px]">
+    <div className="w-[90%] lg:w-[65%] mx-auto bg-white py-[50px]">
       <div className="grid grid-cols-1 md:grid-cols-2 justify-between gap-[50px] ">
         <div className="flex flex-col justify-start">
           <h1 className="text-[24px] font-bold mb-4">CAR Rental</h1>

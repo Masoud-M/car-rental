@@ -38,6 +38,15 @@ const VehicleModels: React.FC<CarInfoProp> = () => {
     fuel: "Gasoline",
   });
 
+  const [activeTab, setActiveTab] = useState<string>(activeCar.name);
+  const [activeTabStyle, setActiveTabStyle] = useState<string>(" bg-[#e9e9e9]");
+  const activeTabId = (id: string) => {
+    setActiveTabStyle(activeTab === id ? " bg-[#ff4d30]" : activeTabStyle);
+  };
+
+  console.log(activeTab);
+  console.log(activeCar.name);
+
   const gridMainStyle = "grid grid-cols-1 grid-flow-row box-border ";
   const gridChildStyle =
     "text-[17px] font-semibold px-[9px] py-[5px] grid grid-cols-2 grid-flow-col text-center border-r-2 border-l-2 border-b-2 border-[#706f7b]";
@@ -74,8 +83,9 @@ const VehicleModels: React.FC<CarInfoProp> = () => {
                     transmission: item.transmission,
                     fuel: item.fuel,
                   }));
+                  () => activeTabId(item.name);
                 }}
-                className="  text-[1.5rem] font-semibold px-[20px] bg-[#e9e9e9]  rounded-md hover:cursor-pointer hover:bg-[#ff4d30] hover:text-white transition py-[12px]"
+                className={`text-[1.5rem] font-semibold px-[20px]   rounded-md hover:cursor-pointer hover:bg-[#ff4d30] hover:text-white transition py-[12px]   ${activeTabStyle}`}
               >
                 <h1>{item.name}</h1>
               </div>

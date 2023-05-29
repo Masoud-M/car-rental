@@ -97,7 +97,7 @@ const Faq = () => {
           </div>
           <div className="flex w-full sm:w-[800px]  flex-col  mx-auto">
             <div
-              id="q2"
+              id="q3"
               onClick={() => openQ("q3")}
               className={`flex  justify-between px-[45px] py-[18px] transition duration-{400} ease-in-out  shadow-[0_3px_6px_0_rgba(0,0,0,0.1)] cursor-pointer ${getClassQuestion(
                 "q3"
