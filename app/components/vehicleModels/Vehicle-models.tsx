@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { CarDataApi } from "../CarData";
 
 import Golf6 from "../../../public/cars-big/golf6.jpg";
@@ -38,19 +38,13 @@ const VehicleModels: React.FC<CarInfoProp> = () => {
     fuel: "Gasoline",
   });
 
-  const [activeTab, setActiveTab] = useState<string>(activeCar.name);
-  const [activeTabStyle, setActiveTabStyle] = useState<string>(" bg-[#e9e9e9]");
-  const activeTabId = (id: string) => {
-    setActiveTabStyle(activeTab === id ? " bg-[#ff4d30]" : activeTabStyle);
-  };
-
-  console.log(activeTab);
-  console.log(activeCar.name);
+  const activeCarRef = useRef();
 
   const gridMainStyle = "grid grid-cols-1 grid-flow-row box-border ";
   const gridChildStyle =
     "text-[17px] font-semibold px-[9px] py-[5px] grid grid-cols-2 grid-flow-col text-center border-r-2 border-l-2 border-b-2 border-[#706f7b]";
   const gridSpanStyle = "border-r-2 border-[#706f7b]";
+  console.log(activeCarRef.current);
   return (
     <div className="w-[90%] lg:w-[65%] mx-auto my-[100px]">
       <div className="flex flex-col justify-center items-center text-center max-w-[60%] mx-auto mb-20">
@@ -69,6 +63,8 @@ const VehicleModels: React.FC<CarInfoProp> = () => {
             return (
               <div
                 key={item.name}
+                id={item.name}
+                ref={activeCarRef}
                 onClick={() => {
                   setActiveCar((prev) => ({
                     ...prev,
@@ -82,10 +78,10 @@ const VehicleModels: React.FC<CarInfoProp> = () => {
                     air: item.air,
                     transmission: item.transmission,
                     fuel: item.fuel,
+                    bg: " bg-[#ff4d30] text-white",
                   }));
-                  () => activeTabId(item.name);
                 }}
-                className={`text-[1.5rem] font-semibold px-[20px]   rounded-md hover:cursor-pointer hover:bg-[#ff4d30] hover:text-white transition py-[12px]   ${activeTabStyle}`}
+                className={`text-[1.5rem] font-semibold px-[20px] rounded-md bg-[#e9e9e9] hover:cursor-pointer hover:bg-[#ff4d30]  hover:text-white transition py-[12px] `}
               >
                 <h1>{item.name}</h1>
               </div>
