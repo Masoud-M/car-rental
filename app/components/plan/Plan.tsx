@@ -7,7 +7,7 @@ import Icon3 from "../../../public/plan/icon3.png";
 const Plan = () => {
   return (
     <div>
-      <div className=" px-4 lg:px-0 lg:w-[65%] mx-auto">
+      <div className=" py-[50px] px-4 lg:px-0 lg:w-[65%] mx-auto">
         <div className="flex flex-col items-center justify-center text-center">
           <h4 className="text-2xl font-bold">Plan your trip now</h4>
           <h1 className="text-5xl/[70px] font-bold ">
