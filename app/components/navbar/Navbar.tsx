@@ -46,7 +46,9 @@ const Navbar = () => {
             <li className={menuStyle}>
               <Link href={"/models"}>Vehicle Models</Link>
             </li>
-            <li className={menuStyle}>Testimonials</li>
+            <li className={menuStyle}>
+              <Link href={"/testimonials"}>Testimonials</Link>
+            </li>
             <li className={menuStyle}>Our Team</li>
             <li className={menuStyle}>Contact</li>
           </ul>
@@ -69,7 +71,9 @@ const Navbar = () => {
           <li className={menuLgStyle}>
             <Link href={"/models"}>Vehicle Models</Link>
           </li>
-          <li className={menuLgStyle}>Testimonials</li>
+          <li className={menuLgStyle}>
+            <Link href={"/testimonials"}>Testimonials</Link>
+          </li>
           <li className={menuLgStyle}>Our Team</li>
           <li className={menuLgStyle}>Contact</li>
         </ul>
