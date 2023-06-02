@@ -64,7 +64,7 @@ const CarCard: React.FC<CarCardProp> = ({
             <FaCarSide className="font-extrabold text-black" />
           </span>
         </div>
-        <div className="flex justify-center items-center bg-[#ff4d30] border-[2px] border-[#ff4d30] rounded-sm shadow-{0_10px_15px_0 rgba(255,83,48,.35} hover:shadow-md cursor-pointer text-[18px] transition px-[30px] py-[18px]">
+        <div className="flex justify-center items-center bg-[#ff4d30] border-[2px] border-[#ff4d30] rounded-sm shadow-md hover:shadow-[0_10px_15px_0_rgba(255,83,48,.35)] cursor-pointer text-[18px] transition px-[30px] py-[18px]">
           <Link className="text-white foont-bold" href={"/"}>
             Book Ride
           </Link>
