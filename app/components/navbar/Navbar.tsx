@@ -49,7 +49,9 @@ const Navbar = () => {
             <li className={menuStyle}>
               <Link href={"/testimonials"}>Testimonials</Link>
             </li>
-            <li className={menuStyle}>Our Team</li>
+            <li className={menuStyle}>
+              <Link href={"/ourteam"}>Our Team</Link>
+            </li>
             <li className={menuStyle}>Contact</li>
           </ul>
         ) : (
@@ -74,7 +76,9 @@ const Navbar = () => {
           <li className={menuLgStyle}>
             <Link href={"/testimonials"}>Testimonials</Link>
           </li>
-          <li className={menuLgStyle}>Our Team</li>
+          <li className={menuLgStyle}>
+            <Link href={"/ourteam"}>Our Team</Link>
+          </li>
           <li className={menuLgStyle}>Contact</li>
         </ul>
 
