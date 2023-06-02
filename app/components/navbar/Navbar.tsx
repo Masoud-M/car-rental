@@ -3,6 +3,7 @@ import { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import Image from "next/image";
 import Logo from "../../../public/logo.png";
+import Link from "next/link";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleNav = () => {
@@ -36,9 +37,15 @@ const Navbar = () => {
 
         {nav ? (
           <ul className=" absolute top-0 bottom-0 right-0 left-0 bg-white w-full h-screen flex flex-col items-center justify-center gap-8 ">
-            <li className={menuStyle}>Home</li>
-            <li className={menuStyle}>About</li>
-            <li className={menuStyle}>Vehicle Models</li>
+            <li className={menuStyle}>
+              <Link href={"/"}>Home</Link>
+            </li>
+            <li className={menuStyle}>
+              <Link href={"/about"}>About</Link>
+            </li>
+            <li className={menuStyle}>
+              <Link href={"/models"}>Vehicle Models</Link>
+            </li>
             <li className={menuStyle}>Testimonials</li>
             <li className={menuStyle}>Our Team</li>
             <li className={menuStyle}>Contact</li>
@@ -53,9 +60,15 @@ const Navbar = () => {
         <Image className="w-[145px]" src={Logo} alt="/" />
 
         <ul className="hidden 2xl:flex gap-6 ">
-          <li className={menuLgStyle}>Home</li>
-          <li className={menuLgStyle}>About</li>
-          <li className={menuLgStyle}>Vehicle Models</li>
+          <li className={menuLgStyle}>
+            <Link href={"/"}>Home</Link>
+          </li>
+          <li className={menuLgStyle}>
+            <Link href={"/about"}>About</Link>
+          </li>
+          <li className={menuLgStyle}>
+            <Link href={"/models"}>Vehicle Models</Link>
+          </li>
           <li className={menuLgStyle}>Testimonials</li>
           <li className={menuLgStyle}>Our Team</li>
           <li className={menuLgStyle}>Contact</li>

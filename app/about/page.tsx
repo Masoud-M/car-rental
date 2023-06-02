@@ -7,12 +7,16 @@ import Icon1 from "../../public/about-page/icon1.png";
 import Icon2 from "../../public/about-page/icon2.png";
 import Icon3 from "../../public/about-page/icon3.png";
 import { FaPhoneAlt } from "react-icons/fa";
+import BookBanner from "../components/bookbanner/BookBanner";
+import BgHero from "../components/bghero/BgHero";
 
 const page = () => {
   return (
     <div>
       <Navbar />
+
       <div>
+        <BgHero pagename="About" />
         <div className="w-[50%] mx-auto flex flex-col lg:flex-row justify-center items-center lg:items-end gap-[50px] max-w-[900px] my-[100px]">
           <div className="flex flex-1 items-end pb-5">
             <Image
@@ -65,20 +69,7 @@ const page = () => {
         </div>
       </div>
       <Plan />
-      <div className="about-bg w-full my-[70px] relative h-[200px]">
-        <div className="z-10 bg-[#2d2d2d] opacity-90 absolute right-0 top-0 w-full h-full"></div>
-        <div className="w-[90%] lg:w-[65%] mx-auto z-20">
-          <div className="flex items-center text-white w-full gap-[50px] h-[200px] ">
-            <h1 className="text-[32px] font-extrabold">
-              Book a car by getting in touch with us
-            </h1>
-            <span className="text-[#ff4d30] text-[27px] items-center  font-extrabold flex gap-[10px] white-space-no-wrap">
-              <FaPhoneAlt />
-              <h3>(123) 456-7869</h3>
-            </span>
-          </div>
-        </div>
-      </div>
+      <BookBanner />
       <Footer />
     </div>
   );
