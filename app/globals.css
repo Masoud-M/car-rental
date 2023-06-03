@@ -43,6 +43,13 @@
     position: relative;
   }
 
+  .bg-contact {
+    background-image: url("../public/Images/contact/bg-contact.png");
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+
   .white-space-no-wrap {
     white-space: nowrap;
   }

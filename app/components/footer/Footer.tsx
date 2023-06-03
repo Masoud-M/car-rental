@@ -11,11 +11,11 @@ const Footer = () => {
             have the perfect car to meet your needs.
           </p>
           <div className="flex items-center  font-semibold mb-[10px]">
-            <BsFillTelephoneFill className="mr-[15px]" />
+            <BsFillTelephoneFill size={16} className="mr-[15px]" />
             <p>(123)-456-789</p>
           </div>
           <div className="flex items-center font-semibold mb-[10px]">
-            <HiMail className="mr-[15px]" />
+            <HiMail size={18} className="mr-[15px]" />
             <p>carrental@gmail.com</p>
           </div>
           <div>Design by Placeholder</div>
