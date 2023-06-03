@@ -1,6 +1,6 @@
 import Image from "next/image";
-import GoogleApp from "../../../public/download/googleapp.svg";
-import AppStore from "../../../public/download/appstore.svg";
+import GoogleApp from "../../../public/Images/download/googleapp.svg";
+import AppStore from "../../../public/Images/download/appstore.svg";
 
 const Download = () => {
   return (

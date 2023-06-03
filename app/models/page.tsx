@@ -2,14 +2,13 @@ import Navbar from "../components/navbar/Navbar";
 import CarCard from "../components/carcard/CarCard";
 import BookBanner from "../components/bookbanner/BookBanner";
 import Footer from "../components/footer/Footer";
-import Link from "next/link";
 import BgHero from "../components/bghero/BgHero";
-import Audi from "../../public/cars-big/audi-box.png";
-import Golf from "../../public/cars-big/golf6-box.png";
-import Toyota from "../../public/cars-big/toyota-box.png";
-import Bmw from "../../public/cars-big/bmw-box.png";
-import Mercedes from "../../public/cars-big/benz-box.png";
-import Passat from "../../public/cars-big/passat-box.png";
+import Audi from "../../public/Images/cars-big/audi-box.png";
+import Golf from "../../public/Images/cars-big/golf6-box.png";
+import Toyota from "../../public/Images/cars-big/toyota-box.png";
+import Bmw from "../../public/Images/cars-big/bmw-box.png";
+import Mercedes from "../../public/Images/cars-big/benz-box.png";
+import Passat from "../../public/Images/cars-big/passat-box.png";
 
 const page = () => {
   return (

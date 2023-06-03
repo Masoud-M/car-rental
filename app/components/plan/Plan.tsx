@@ -1,9 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import Icon1 from "../../../public/plan/icon1.png";
-import Icon2 from "../../../public/plan/icon2.png";
-import Icon3 from "../../../public/plan/icon3.png";
+import Icon1 from "../../../public/Images/plan/icon1.png";
+import Icon2 from "../../../public/Images/plan/icon2.png";
+import Icon3 from "../../../public/Images/plan/icon3.png";
 const Plan = () => {
   return (
     <div>

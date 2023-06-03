@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { FaQuoteRight } from "react-icons/fa";
-import Icon1 from "../../../public/testimonials/pfp1.jpg";
-import Icon2 from "../../../public/testimonials/pfp2.jpg";
+import Icon1 from "../../../public/Images/testimonials/pfp1.jpg";
+import Icon2 from "../../../public/Images/testimonials/pfp2.jpg";
 const Testimonials = () => {
   return (
     <div className="bg-[#f8f8f8]">

@@ -4,37 +4,37 @@
 
 @layer utilities {
   .booking-bg {
-    background-image: url("../public/booking/book-bg.png");
+    background-image: url("../public/Images/booking/book-bg.png");
     background-position: 50%;
   }
 
   .whyus-bg {
-    background-image: url("../public/whyus/bg.png");
+    background-image: url("../public/Images/whyus/bg.png");
     background-position: -225px 255px;
     background-size: cover;
     background-repeat: no-repeat;
   }
 
   .faq-bg {
-    background-image: url("../public/faq/car.png");
+    background-image: url("../public/Images/faq/car.png");
     background-position: 0 70%;
     background-repeat: no-repeat;
     background-size: auto;
   }
   .download-bg {
-    background-image: url("../public/download/bg02.png");
+    background-image: url("../public/Images/download/bg02.png");
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
   }
 
   .about-bg {
-    background-image: url("../public/about-page/book-banner.png");
+    background-image: url("../public/Images/about-page/book-banner.png");
     width: 100%;
   }
 
   .bg-hero {
-    background-image: url("../public/about-page/about-heroe-bg.png");
+    background-image: url("../public/Images/about-page/about-heroe-bg.png");
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;

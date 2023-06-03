@@ -1,9 +1,9 @@
 import Image from "next/image";
-import Bg from "../../../public/whyus/bg.png";
-import MainBg from "../../../public/whyus/main.png";
-import Icon1 from "../../../public/whyus/icon1.png";
-import Icon2 from "../../../public/whyus/icon2.png";
-import Icon3 from "../../../public/whyus/icon3.png";
+import Bg from "../../../public/Images/whyus/bg.png";
+import MainBg from "../../../public/Images/whyus/main.png";
+import Icon1 from "../../../public/Images/whyus/icon1.png";
+import Icon2 from "../../../public/Images/whyus/icon2.png";
+import Icon3 from "../../../public/Images/whyus/icon3.png";
 
 const WhyUs = () => {
   return (

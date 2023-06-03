@@ -2,12 +2,12 @@
 import { useRef, useState } from "react";
 import { CarDataApi } from "../CarData";
 
-import Golf6 from "../../../public/cars-big/golf6.jpg";
-import AudiA1 from "../../../public/cars-big/AudiA1.jpg";
-import Toyota from "../../../public/cars-big/Toyota.jpg";
-import Bmw320 from "../../../public/cars-big/Bmw320.jpg";
-import Benz from "../../../public/cars-big/Benz.jpg";
-import Passat from "../../../public/cars-big/Passat.jpg";
+import Golf6 from "../../../public/Images/cars-big/golf6.jpg";
+import AudiA1 from "../../../public/Images/cars-big/AudiA1.jpg";
+import Toyota from "../../../public/Images/cars-big/Toyota.jpg";
+import Bmw320 from "../../../public/Images/cars-big/Bmw320.jpg";
+import Benz from "../../../public/Images/cars-big/Benz.jpg";
+import Passat from "../../../public/Images/cars-big/Passat.jpg";
 
 import Image, { StaticImageData } from "next/image";
 interface CarInfoProp {

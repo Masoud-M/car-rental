@@ -3,12 +3,12 @@ import Navbar from "../components/navbar/Navbar";
 import BgHero from "../components/bghero/BgHero";
 import BookBanner from "../components/bookbanner/BookBanner";
 import Footer from "../components/footer/Footer";
-import Img1 from "../../public/team/1.png";
-import Img2 from "../../public/team/2.png";
-import Img3 from "../../public/team/3.png";
-import Img4 from "../../public/team/4.png";
-import Img5 from "../../public/team/5.png";
-import Img6 from "../../public/team/6.png";
+import Img1 from "../../public/Images/team/1.png";
+import Img2 from "../../public/Images/team/2.png";
+import Img3 from "../../public/Images/team/3.png";
+import Img4 from "../../public/Images/team/4.png";
+import Img5 from "../../public/Images/team/5.png";
+import Img6 from "../../public/Images/team/6.png";
 
 import TeamCard from "../components/teamcard/TeamCard";
 const page = () => {

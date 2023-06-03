@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import Image from "next/image";
-import Logo from "../../../public/logo.png";
+import Logo from "../../../public/Images/logo.png";
 import Link from "next/link";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -52,7 +52,9 @@ const Navbar = () => {
             <li className={menuStyle}>
               <Link href={"/ourteam"}>Our Team</Link>
             </li>
-            <li className={menuStyle}>Contact</li>
+            <li className={menuStyle}>
+              <Link href={"/contact"}>Contact</Link>
+            </li>
           </ul>
         ) : (
           ""
@@ -79,7 +81,9 @@ const Navbar = () => {
           <li className={menuLgStyle}>
             <Link href={"/ourteam"}>Our Team</Link>
           </li>
-          <li className={menuLgStyle}>Contact</li>
+          <li className={menuLgStyle}>
+            <Link href={"/contact"}>Contact</Link>
+          </li>
         </ul>
 
         <div className="flex items-center">

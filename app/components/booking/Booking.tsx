@@ -1,10 +1,8 @@
 "use client";
 
-import Image from "next/image";
 import { FaCarAlt } from "react-icons/fa";
 import { MdLocationPin } from "react-icons/md";
 import { BsFillCalendarDateFill } from "react-icons/bs";
-import BookBg from "../../../public/booking/book-bg.png";
 const Booking = () => {
   const inputSectionStyle = "flex flex-col";
   const titleStyle = "flex items-center";

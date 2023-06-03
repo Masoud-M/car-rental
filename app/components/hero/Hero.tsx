@@ -1,8 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import HeroBg from "../../../public/hero-bg.png";
-import MainCar from "../../../public/main-car.png";
+import HeroBg from "../../../public/Images/hero-bg.png";
+import MainCar from "../../../public/Images/main-car.png";
 const Hero = () => {
   return (
     <div>
