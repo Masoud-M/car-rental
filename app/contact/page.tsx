@@ -36,13 +36,19 @@ const page = () => {
             </div>
           </div>
           <div className="flex flex-col">
-            <form className="flex flex-col">
+            <form
+              className="flex flex-col"
+              action="https://getform.io/f/32ad80e6-3f6d-410f-8727-76a999806fcf"
+              method="POST"
+              encType="multipart/form-data"
+            >
               <span className="font-semibold mb-[10px]">
                 Full Name<b className="text-[#ff4d30]">*</b>
               </span>
               <input
                 className="bg-[#f2f2f2] border-none outline-none px-[30px] py-[19px] mb-[23px]"
                 type="text"
+                name="name"
                 placeholder="Your Name"
               />
               <span className="font-semibold mb-[10px]">
@@ -51,6 +57,7 @@ const page = () => {
               <input
                 className="bg-[#f2f2f2] border-none outline-none px-[30px] py-[19px] mb-[23px]"
                 type="email"
+                name="email"
                 placeholder="youremail@example.com"
               />
               <span className="font-semibold mb-[10px]">
@@ -59,11 +66,9 @@ const page = () => {
               <textarea
                 className="bg-[#f2f2f2] border-none outline-none px-[30px] py-[19px] mb-[25px] h-[180px]"
                 placeholder="Write Here..."
+                name="message"
               ></textarea>
-              <button
-                className="flex flex-row align-middle items-center justify-center bg-[#ff4d30] text-[#fff] font-bold text-[18px] rounded-md border-[2px] border-[#ff4d30] cursor-pointer transition px-[30px] py-[18px] shadow-lg hover:shadow-[0_10px_15px_0_rgba(255,83,48,.35)]"
-                type="submit"
-              >
+              <button className="flex flex-row align-middle items-center justify-center bg-[#ff4d30] text-[#fff] font-bold text-[18px] rounded-md border-[2px] border-[#ff4d30] cursor-pointer transition px-[30px] py-[18px] shadow-lg hover:shadow-[0_10px_15px_0_rgba(255,83,48,.35)]">
                 <FaEnvelopeOpenText className="mr-3" />
                 <span>Send Message</span>
               </button>

@@ -15,7 +15,7 @@ const Download = () => {
             order event music. Incommode so intention defective at convinced.
             Led income months itself and houses you.
           </p>
-          <div className="flex gap-[30px] mt-[20px]">
+          <div className="flex items-center md:justify-start justify-center flex-col md:flex-row gap-[30px] mt-[20px]">
             <Image className="cursor-pointer" alt="/" src={GoogleApp} />
             <Image className="cursor-pointer" alt="/" src={AppStore} />
           </div>

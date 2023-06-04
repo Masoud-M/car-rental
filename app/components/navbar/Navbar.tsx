@@ -25,18 +25,18 @@ const Navbar = () => {
           <AiOutlineMenu
             onClick={handleNav}
             size={32}
-            className="absolute top-8 right-4 z-[99] hover:text-[#ff4d30] font-bold transition lg:hidden "
+            className="absolute top-8 right-4 z-[99] hover:text-[#ff4d30] font-bold transition ease-in-out duration-700 lg:hidden "
           />
         ) : (
           <AiOutlineClose
             onClick={handleNav}
             size={32}
-            className="absolute top-8 right-4 z-[99] hover:text-[#ff4d30] transition lg:hidden "
+            className="absolute top-8 right-4 z-[99] hover:text-[#ff4d30] font-bold transition ease-in-out duration-700 lg:hidden "
           />
         )}
 
         {nav ? (
-          <ul className=" absolute top-0 bottom-0 right-0 left-0 bg-white w-full h-screen flex flex-col items-center justify-center gap-8 ">
+          <ul className=" absolute top-0 bottom-0 right-0 left-0 bg-white w-full h-screen flex flex-col items-center justify-center gap-8 transition ease-in-out duration-700">
             <li className={menuStyle}>
               <Link href={"/"}>Home</Link>
             </li>
