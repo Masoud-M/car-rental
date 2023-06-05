@@ -1,5 +1,5 @@
 "use client";
-import { useRef, useState } from "react";
+import { useState } from "react";
 import { CarDataApi } from "../CarData";
 
 import Golf6 from "../../../public/Images/cars-big/golf6.jpg";
@@ -10,6 +10,7 @@ import Benz from "../../../public/Images/cars-big/Benz.jpg";
 import Passat from "../../../public/Images/cars-big/Passat.jpg";
 
 import Image, { StaticImageData } from "next/image";
+
 interface CarInfoProp {
   name: string;
   price: string;
@@ -38,13 +39,11 @@ const VehicleModels: React.FC<CarInfoProp> = () => {
     fuel: "Gasoline",
   });
 
-  const activeCarRef = useRef();
-
   const gridMainStyle = "grid grid-cols-1 grid-flow-row box-border ";
   const gridChildStyle =
     "text-[17px] font-semibold px-[9px] py-[5px] grid grid-cols-2 grid-flow-col text-center border-r-2 border-l-2 border-b-2 border-[#706f7b]";
   const gridSpanStyle = "border-r-2 border-[#706f7b]";
-  console.log(activeCarRef.current);
+
   return (
     <div className="w-[90%] lg:w-[65%] mx-auto my-[100px]">
       <div className="flex flex-col justify-center items-center text-center max-w-[60%] mx-auto mb-20">
@@ -64,7 +63,6 @@ const VehicleModels: React.FC<CarInfoProp> = () => {
               <div
                 key={item.name}
                 id={item.name}
-                ref={activeCarRef}
                 onClick={() => {
                   setActiveCar((prev) => ({
                     ...prev,

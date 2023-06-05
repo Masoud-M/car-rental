@@ -11,7 +11,7 @@ import Testimonials from "./components/testimonials/Testimonials";
 import Faq from "./components/faq/Faq";
 import Download from "./components/download/Download";
 import Footer from "./components/footer/Footer";
-
+import AudiA1 from "../public/Images/cars-big/audia1.jpg";
 const font = Nunito({
   subsets: ["latin"],
 });
@@ -33,7 +33,18 @@ export default function RootLayout({
         <Hero />
         <Booking />
         <Plan />
-        <VehicleModels />
+        <VehicleModels
+          name="Audi A1 S-Line"
+          price="45"
+          img={AudiA1}
+          model="Audi"
+          mark="A1"
+          year="2012"
+          doors="4/5"
+          air="Yes"
+          transmission="Manual"
+          fuel="Gasoline"
+        />
         <Banner />
         <WhyUs />
         <Testimonials />
