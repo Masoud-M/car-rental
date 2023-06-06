@@ -1,20 +1,11 @@
 "use client";
 import { useState } from "react";
 import { CarDataApi } from "../CarData";
-
-import Golf6 from "../../../public/Images/cars-big/golf6.jpg";
-import AudiA1 from "../../../public/Images/cars-big/AudiA1.jpg";
-import Toyota from "../../../public/Images/cars-big/Toyota.jpg";
-import Bmw320 from "../../../public/Images/cars-big/Bmw320.jpg";
-import Benz from "../../../public/Images/cars-big/Benz.jpg";
-import Passat from "../../../public/Images/cars-big/Passat.jpg";
-
 import Image, { StaticImageData } from "next/image";
 
 interface CarInfoProp {
   name: string;
   price: string;
-  img: StaticImageData;
   model: string;
   mark: string;
   year: string;
@@ -22,6 +13,7 @@ interface CarInfoProp {
   air: string;
   transmission: string;
   fuel: string;
+  imageSrc: string;
 }
 
 const VehicleModels: React.FC<CarInfoProp> = () => {
@@ -29,7 +21,6 @@ const VehicleModels: React.FC<CarInfoProp> = () => {
   const [activeCar, setActiveCar] = useState({
     name: "Audi A1 S-Line",
     price: "45",
-    img: AudiA1,
     model: "Audi",
     mark: "A1",
     year: "2012",
@@ -37,6 +28,15 @@ const VehicleModels: React.FC<CarInfoProp> = () => {
     air: "Yes",
     transmission: "Manual",
     fuel: "Gasoline",
+    imageSrc: "../../../public/Images/cars-big/AudiA1.jpg",
+    activeImg: (
+      <Image
+        src={"/Images/cars-big/AudiA1.jpg"}
+        alt="/"
+        width={500}
+        height={500}
+      />
+    ),
   });
 
   const gridMainStyle = "grid grid-cols-1 grid-flow-row box-border ";
@@ -58,30 +58,37 @@ const VehicleModels: React.FC<CarInfoProp> = () => {
       <div className="flex justify-between box-border gap-4 flex-col lg:flex-row ">
         {/* car menu */}
         <div className=" flex flex-col gap-2 box-border lg:max-w-[400px]">
-          {info.map((item) => {
+          {info.map((car) => {
             return (
               <div
-                key={item.name}
-                id={item.name}
+                key={car.name}
+                id={car.name}
                 onClick={() => {
                   setActiveCar((prev) => ({
                     ...prev,
-                    name: item.name,
-                    price: item.price,
-                    img: item.img,
-                    model: item.model,
-                    mark: item.mark,
-                    year: item.year,
-                    doors: item.doors,
-                    air: item.air,
-                    transmission: item.transmission,
-                    fuel: item.fuel,
-                    bg: " bg-[#ff4d30] text-white",
+                    name: car.name,
+                    price: car.price,
+                    model: car.model,
+                    mark: car.mark,
+                    year: car.year,
+                    doors: car.doors,
+                    air: car.air,
+                    transmission: car.transmission,
+                    fuel: car.fuel,
+                    activeImg: (
+                      <Image
+                        src={car.imageSrc}
+                        alt={car.name}
+                        width={500}
+                        height={500}
+                        className=" block w-full"
+                      />
+                    ),
                   }));
                 }}
                 className={`text-[1.5rem] font-semibold px-[20px] rounded-md bg-[#e9e9e9] hover:cursor-pointer hover:bg-[#ff4d30]  hover:text-white transition py-[12px] `}
               >
-                <h1>{item.name}</h1>
+                <h1>{car.name}</h1>
               </div>
             );
           })}
@@ -89,9 +96,7 @@ const VehicleModels: React.FC<CarInfoProp> = () => {
 
         <div className="flex flex-col justify-between items-center  md:flex-row lg:gap-[11rem] ">
           {/* image */}
-          <div className=" max-w-[500px] ">
-            <Image className=" block w-full" src={activeCar.img} alt="/" />
-          </div>
+          <div className=" max-w-[500px] ">{activeCar.activeImg}</div>
 
           {/* car info */}
           <div className=" h-[400px] w-[250px]">

@@ -44,6 +44,7 @@ export default function RootLayout({
           air="Yes"
           transmission="Manual"
           fuel="Gasoline"
+          imageSrc="/Images/cars-big/AudiA1.jpg"
         />
         <Banner />
         <WhyUs />
